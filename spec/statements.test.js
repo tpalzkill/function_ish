@@ -1,16 +1,16 @@
 var expect = chai.expect;
 
 describe("#sum", function(){
-  xit("adds two numbers", function(){
+  it("adds two numbers", function(){
     expect(sum(1,2)).to.equal(3);
   });
-  xit("works with negative numbers", function(){
+  it("works with negative numbers", function(){
     expect(sum(-1,2)).to.equal(1);
   });
 });
 
 describe("#isEqual", function(){
-  xit("compares numbers", function(){
+  it("compares numbers", function(){
     expect(isEqual(1,2)).to.equal(false);
   });
   xit("compares strings", function(){
