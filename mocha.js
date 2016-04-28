@@ -2443,14 +2443,14 @@ function HTML(runner) {
     stack.shift();
   });
 
-  // runner.on('fail', function(test) {
-  //   // For type = 'test' its possible that the test failed due to multiple
-  //   // done() calls. So report the issue here.
-  //   if (test.type === 'hook'
-  //     || test.type === 'test') {
-  //     runner.emit('test end', test);
-  //   }
-  // });
+  runner.on('fail', function(test) {
+    // For type = 'test' its possible that the test failed due to multiple
+    // done() calls. So report the issue here.
+    if (test.type === 'hook'
+      || test.type === 'test') {
+      runner.emit('test end', test);
+    }
+  });
 
   runner.on('test end', function(test) {
     // TODO: add to stats
