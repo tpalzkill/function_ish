@@ -1,7 +1,16 @@
+  suite("#geekify", function() {
+    test("it strips whitespace from the beginning / end of the string, replaces o and e and spaces with dashes", function() {
+      assert.equal(geekify(" war and peace  "), "war-and-pi3c3");
+      assert.equal(geekify(" Chlorine Pool "), "ch0rin3-p00l");
+    });
+  });
+
   // TODO:
   // we give them an alphabet of uppercase letters
   // give them a real word at the end and they have to encode it
   // give them a real encrypted message and they decode it
+
+
 
   suite("#ceaserAdd13", function() {
     // 97 - 122

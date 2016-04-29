@@ -31,6 +31,14 @@ window.onload = function() {
     });
   });
 
+  suite("#roundUp", function(){
+    test("returns the number, rounded up", function(){
+      assert.equal(roundUp(2.1), 3);
+      assert.equal(roundUp(4.2), 5);
+      assert.equal(roundUp(5.6), 6);
+    });
+  });
+
   suite("#celsiusToFahrenheit", function() {
     test('returns the temperature in Fahrenheit', function() {
       assert.equal(celsiusToFahrenheit(30), 86);
@@ -67,6 +75,29 @@ window.onload = function() {
     test("returns a sentence with no oxford comma", function(){
       assert.equal(toSentence("Red", "Green", "Blue", false), "Red, Green and Blue.");
       assert.equal(toSentence("Apples", "Oranges", "Bananas", false), "Apples, Oranges and Bananas.");
+    });
+  });
+
+  suite("#toRomanNumeral", function(){
+    test("returns the roman numeral representation of the decimal from 1 to 10", function(){
+      assert.equal(toRomanNumeral(1), "I");
+      assert.equal(toRomanNumeral(2), "II");
+      assert.equal(toRomanNumeral(3), "III");
+      assert.equal(toRomanNumeral(4), "IV");
+      assert.equal(toRomanNumeral(5), "V");
+      assert.equal(toRomanNumeral(6), "VI");
+      assert.equal(toRomanNumeral(7), "VII");
+      assert.equal(toRomanNumeral(8), "VIII");
+      assert.equal(toRomanNumeral(9), "IX");
+      assert.equal(toRomanNumeral(10), "X");
+    });
+    test("returns null if the number is less than 1", function(){
+      assert.equal(toRomanNumeral(0), null);
+      assert.equal(toRomanNumeral(-1), null);
+    });
+    test("returns null if the number is greater than 10", function(){
+      assert.equal(toRomanNumeral(11), null);
+      assert.equal(toRomanNumeral(12), null);
     });
   });
 
@@ -189,6 +220,63 @@ window.onload = function() {
       assert.equal(isLeapYear(1901), false);
       assert.equal(isLeapYear(2001), false);
       assert.equal(isLeapYear(1996), true);
+    });
+  });
+
+  suite("#shout", function() {
+    test("returns the input as uppercase", function() {
+      assert.equal(shout("sOmeTHing"), "SOMETHING");
+      assert.equal(shout("whoo hoo"), "WHOO HOO");
+    });
+  });
+
+  suite("#whisper", function() {
+    test("returns the input as lower case, with 'shhh...'", function() {
+      assert.equal(whisper("sOmeTHing"), "shhh... something");
+      assert.equal(whisper("whoo hoo"), "shhh... whoo hoo");
+    });
+  });
+
+  suite("#stopAt", function() {
+    test("returns the first argument, up to the last argument", function() {
+      assert.equal(stopAt("check this out now", "out"), "check this");
+      assert.equal(stopAt("turn on the TV", "the"), "turn on");
+    });
+  });
+
+  suite("#capitalize", function() {
+    test("returns input with the first letter capitalized", function() {
+      assert.equal(capitalize("a word"), "A word");
+      assert.equal(capitalize("some cool stuff"), "Some cool stuff");
+    });
+  });
+
+  suite("#leftPad5", function() {
+    test("returns input with padded by zeroes if the string is less than 5 characters", function() {
+      assert.equal(leftPad5(1), "00001");
+      assert.equal(leftPad5(27), "00027");
+      assert.equal(leftPad5(348), "00348");
+      assert.equal(leftPad5(8099), "08099");
+    });
+    test("returns the input as a string if it's 5 characters or more", function() {
+      assert.equal(leftPad5(76321), "76321");
+      assert.equal(leftPad5(918273), "918273");
+    });
+  });
+
+  suite("#pickyPickyString", function() {
+    test("it returns 'Thanks!  Got it.' when passed a string", function() {
+      assert.equal(pickyPickyString("hello"), "Thanks!  Got it.");
+      assert.equal(pickyPickyString("there"), "Thanks!  Got it.");
+    });
+    test("it returns an error message when passed anything other than a string", function() {
+      assert.equal(pickyPickyString(1), "Oh no!  I wanted a string, but got a number");
+      assert.equal(pickyPickyString(Math.random()), "Oh no!  I wanted a string, but got a number");
+      assert.equal(pickyPickyString(true), "Oh no!  I wanted a string, but got a boolean");
+      assert.equal(pickyPickyString(false), "Oh no!  I wanted a string, but got a boolean");
+      assert.equal(pickyPickyString(function(){}), "Oh no!  I wanted a string, but got a function");
+      assert.equal(pickyPickyString({}), "Oh no!  I wanted a string, but got a object");
+      assert.equal(pickyPickyString([]), "Oh no!  I wanted a string, but got a object");
     });
   });
 

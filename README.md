@@ -1,12 +1,18 @@
-# Mocha In the Browser
+## Welcome to JavaScript!!
 
-A super simple example of how [Mocha](http://visionmedia.github.com/mocha/) tests
-can be executed in the browser. A great way to start is cloning this project and 
-working through the [String Calculator Kata](http://osherove.com/tdd-kata-1/).
-Open up the public/index.html file in a browser to see the JavaScript object
-used by the page.
+There's so much to do!  Let's get started.
 
-### Integrating it into your project
+First, you need to get this code onto your machine.  To do so, clone this repository.
 
-Copy the spec directory into your project. Make sure the runner.html file has all
-the right paths.
+PROTIP: Make sure you use the SSH URL
+
+![](https://students-gschool-production.s3.amazonaws.com/uploads/asset/file/102/github-ssh-urls.png)
+
+At the command line run:
+
+```
+cd ~/workspace
+git clone git@github.com:gSchool/javascript-statements.git
+cd javascript-statements
+open index.html
+```
