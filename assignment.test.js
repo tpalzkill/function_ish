@@ -12,9 +12,9 @@ window.onload = function() {
 
   suite('#product', function() {
     test('multiplies two numbers', function() {
-      assert.equal(sum(5, 2), 10);
-      assert.equal(sum(-4, 8), -32);
-      assert.equal(sum(-6, -3), 18);
+      assert.equal(product(5, 2), 10);
+      assert.equal(product(-4, 8), -32);
+      assert.equal(product(-6, -3), 18);
     });
   });
 
@@ -67,6 +67,7 @@ window.onload = function() {
       assert.equal(toSentence('Red', 'Green', 'Blue', true), 'Red, Green, and Blue.');
       assert.equal(toSentence('Apples', 'Oranges', 'Bananas', true), 'Apples, Oranges, and Bananas.');
     });
+
     test('converts the words to a sentence with no oxford comma', function() {
       assert.equal(toSentence('Red', 'Green', 'Blue', false), 'Red, Green and Blue.');
       assert.equal(toSentence('Apples', 'Oranges', 'Bananas', false), 'Apples, Oranges and Bananas.');
@@ -78,10 +79,12 @@ window.onload = function() {
       assert.equal(toRoman(0), null);
       assert.equal(toRoman(-1), null);
     });
+
     test('returns null if the number is greater than 10', function() {
       assert.equal(toRoman(11), null);
       assert.equal(toRoman(12), null);
     });
+
     test('conversts the number to a roman numeral string', function() {
       assert.equal(toRoman(1), 'I');
       assert.equal(toRoman(2), 'II');
@@ -119,11 +122,13 @@ window.onload = function() {
       assert.equal(isStrictlyEqual(true, true), true);
       assert.equal(isStrictlyEqual(false, false), true);
     });
+
     test('returns false if the values are equal but types are not', function() {
       assert.equal(isStrictlyEqual(-1, '-1'), false);
       assert.equal(isStrictlyEqual(true, 'true'), false);
       assert.equal(isStrictlyEqual(undefined, 'undefined'), false);
     });
+
     test('returns false if the values are not equal', function() {
       assert.equal(isStrictlyEqual(1, 2), false);
       assert.equal(isStrictlyEqual(true, false), false);
@@ -135,6 +140,7 @@ window.onload = function() {
       assert.equal(isLooselyEqual(-1, '-1'), true);
       assert.equal(isLooselyEqual(false, 0), true);
     });
+
     test('returns false if the values are not equal', function() {
       assert.equal(isLooselyEqual(1, '2'), false);
       assert.equal(isLooselyEqual('true', false), false);
@@ -153,6 +159,7 @@ window.onload = function() {
       assert.equal(isEven(10), true);
       assert.equal(isEven(14), true);
     });
+
     test('returns false if the number is not even', function() {
       assert.equal(isEven(11), false);
       assert.equal(isEven(15), false);
@@ -164,6 +171,7 @@ window.onload = function() {
       assert.equal(isOdd(11), true);
       assert.equal(isOdd(15), true);
     });
+
     test('returns false if the number is not odd', function() {
       assert.equal(isOdd(10), false);
       assert.equal(isOdd(14), false);
@@ -178,6 +186,7 @@ window.onload = function() {
       assert.equal(isVowel('o'), true);
       assert.equal(isVowel('u'), true);
     });
+
     test('returns false if the letter is not a vowel', function() {
       assert.equal(isVowel('z'), false);
       assert.equal(isVowel('b'), false);
@@ -207,10 +216,12 @@ window.onload = function() {
       assert.equal(iceCreamPosition('warm', 'cardamom'), 'not at all');
       assert.equal(iceCreamPosition('cold', 'cardamom'), 'not at all');
     });
+
     test('returns "on the side" if the pie temperature is warm', function() {
       assert.equal(iceCreamPosition('warm', 'vanilla'), 'on the side');
       assert.equal(iceCreamPosition('warm', 'chocolate'), 'on the side');
     });
+
     test('returns "on top" if the pie temperature is cold', function() {
       assert.equal(iceCreamPosition('cold', 'vanilla'), 'on top');
       assert.equal(iceCreamPosition('cold', 'chocolate'), 'on top');
@@ -222,6 +233,7 @@ window.onload = function() {
       assert.equal(isLeapYear(1900), true);
       assert.equal(isLeapYear(1996), true);
     });
+
     test('returns false if the number is not a leap year', function() {
       assert.equal(isLeapYear(2000), false);
       assert.equal(isLeapYear(1901), false);
@@ -253,7 +265,7 @@ window.onload = function() {
   suite('#capitalize', function() {
     test('returns the message with the first letter capitalized', function() {
       assert.equal(capitalize('secret bitcoin mine'), 'Secret bitcoin mine');
-      assert.equal(capitalize('british football'), 'British footbal');
+      assert.equal(capitalize('british football'), 'British football');
     });
   });
 
@@ -264,6 +276,7 @@ window.onload = function() {
       assert.equal(leftPad5('dog'), '  dog');
       assert.equal(leftPad5('tree'), ' tree');
     });
+
     test('returns the argument if its length is 5 or more characters', function() {
       assert.equal(leftPad5('socks'), 'socks');
       assert.equal(leftPad5('drawer'), 'drawer');
@@ -275,6 +288,7 @@ window.onload = function() {
       assert.equal(superPicky('hello'), 'Thanks! Got it.');
       assert.equal(superPicky('there'), 'Thanks! Got it.');
     });
+
     test('returns an error message if given anything other than a string', function() {
       assert.equal(superPicky(1), 'I wanted a string, but all I got was a stinking number');
       assert.equal(superPicky(Math.random()), 'I wanted a string, but all I got was a stinking number');
@@ -291,10 +305,12 @@ window.onload = function() {
       assert.equal(calculateTaxRate(100, 'separate'), 'Better call an accountant');
       assert.equal(calculateTaxRate(100, 'head of household'), 'Better call an accountant');
     });
+
     test('returns a warning if the amount is over 74,900', function() {
       assert.equal(calculateTaxRate(74901, 'single'), 'Better call an accountant');
       assert.equal(calculateTaxRate(100000, 'joint'), 'Better call an accountant');
     });
+
     test('returns the correct tax rate for a single filer', function() {
       assert.equal(calculateTaxRate(1, 'single'), '10%');
       assert.equal(calculateTaxRate(100, 'single'), '10%');
@@ -303,6 +319,7 @@ window.onload = function() {
       assert.equal(calculateTaxRate(15000, 'single'), '15%');
       assert.equal(calculateTaxRate(37450, 'single'), '15%');
     });
+
     test('returns the correct tax rate for a joint filer', function() {
       assert.equal(calculateTaxRate(1, 'joint'), '10%');
       assert.equal(calculateTaxRate(100, 'joint'), '10%');
