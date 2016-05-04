@@ -286,7 +286,7 @@ function roundUp(decimal) {
 
 
 
-// Define a function named titlize that takes one argument
+// Define a function named capitalize that takes one argument
 //    message (string)
 //
 // Return the argument with the first letter capitalized. For example, given
