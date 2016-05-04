@@ -1,285 +1,334 @@
-// ------- Build with your instructor ------------
-// Define a function named sum that takes two numbers as arguments
-// Return the sum of those two arguments
-// Uncomment the code below by typing Command + /
-function sum(a,b) {
+// Define a function named sum that takes two arguments
+//    a (number)
+//    b (number)
+//
+// Return the sum of these two arguments
+function sum(a, b) {
   // return a + b;
 }
 
-
-
-// Define a function named product that takes two numbers as arguments
-// Return the product of those two arguments
-function product(a,b) {
+// Define a function named product that takes two arguments
+//    a (number)
+//    b (number)
+//
+// Return the product of these two arguments
+function product(a, b) {
   // YOUR CODE HERE
 }
 
-
-
-// Define a function named sumAndProduct that takes three numbers as arguments
-// Add the first two arguments together, then multiply that sum by the third argument
+// Define a function named sumAndProduct that takes three arguments
+//    x (number)
+//    y (number)
+//    z (number)
 //
-// Example: if you are given 1, 2, 5 you would add 1 and 2 (which is 3) and multiply by 5, returning 15
+// Return the sum of the first two arguments multiplied by the third argument.
+// For example, given 1, 2, and 5, then return 15.
 //
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Grouping
-function sumAndProduct(x,y,z) {
+function sumAndProduct(x, y, z) {
 
 }
 
-
-
-// Define a function named roundUp that takes a number (a float) as an argument
-// Return that number, rounded up
+// Define a function named roundUp that takes one argument
+//    decimal (number)
+//
+// Return the argument rounded up to the nearest integer
+//
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/ceil
-function roundUp(num) {
+function roundUp(decimal) {
 
 }
 
-
-
-// Define a function named celsiusToFahrenheit that takes one argument, a number (in celcius)
-// Return a float that represents that temperature in Farenheit
+// Define a function named toFahrenheit that takes one argument
+//    celsius (number)
 //
-// HINT: Use Google to find the formula
-function celsiusToFahrenheit(temp) {
-
-}
+// Return the argument converted to Farenheit rounded to the nearest integer.
+// Use Google to find the formula.
 
 
 
-// Define a function named areaOfCircle that calculates the area of a circle
-// It takes one argument, radius
+// Define a function named areaOfCircle that takes one argument
+//    radius (number)
 //
-// See https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=area%20of%20a%20circle
+// Return the area of a circle using that argument. Use Google to find the
+// formula.
+//
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/PI
-function areaOfCircle(radius) {
-
-}
 
 
 
-// Define a function named areaOfDonut that takes two arguments:
-//    - outerRadius
-//    - innerRadius
-// Returns the area of the donut
-function areaOfDonut(outerRadius, innerRadius) {
-
-}
-
+// Define a function named areaOfRing that takes two arguments
+//    outerRadius (number)
+//    innerRadius (number)
+//
+// Return the area of a circular ring using these arguments. Use Google to find
+// the formula.
 
 
-// Define a function named greet that takes 2 arguments, firstName and lastName
-// Return a string in the format "Hello, Tom Brady!"
+
+// Define a function named greet that takes 2 arguments
+//    firstName (string)
+//    lastName (string)
+//
+// Return a string in the format 'Hello, Kelly Rippa!' using these arguments
 //
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#Template_strings
+
+
+
+// Define a function named toSentence that takes four arguments
+//    word1 (string)
+//    word2 (string)
+//    word3 (string)
+//    oxfordComma (boolean)
 //
-function greet(firstName, lastName) {
-
-}
-
-
-
-// Define a function named toSentence that takes 4 arguments: word1, word2, word3, oxfordComma
-// If the 4th argument (oxfordComma) is true
-//    Return a String in the format "word1, word2, and word3."
-// If the 4th argument (oxfordComma) is false
-//    Return a String in the format "word1, word2 and word3."
+// If oxfordComma is true,
+//    Return a string in the format "word1, word2, and word3."
+// If oxfordComma is false,
+//    Return a string in the format "word1, word2 and word3."
 //
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Addition
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#String_operators
 //
-function toSentence(word1, word2, word3, oxfordComma){
-
-}
+// See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#String_operators
 
 
 
-// Define a function named toRomanNumeral that takes 1 arguments: a number
-// If the number is between 1 and 10 (inclusive)
-//    Return a String representing the roman numeral of the number
-// If the number is less than 1, or greater than 10
+// Define a function named toRoman that takes one argument
+//    arabic (number)
+//
+// If the argument is less than 1
 //    Return null
+// If the argument is greater than 10
+//    Return null
+// Otherwise
+//    Return the argument converted to a roman numeral string
 //
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling#switch_statement
 
 
 
-// Define a function named toRomanNumeral that takes one argument, an integer from 1-10
-// If the number is less than 1, return null
-// If the number is greater than 10, return null
-// Otherwise return the Roman Numeral that corresponds with the number given
+// Define a function toDolla that takes one number argument
+//    amount (number)
 //
-// See https://en.wikipedia.org/wiki/Roman_numerals
-// See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling#switch_statement
-
-
-
-// Define a function toDolla that takes one number argument: amount
-// Return a string representation
-// Example: if you get 10, return "10.00"
+// Return the argument converted to dollar currency string. For example, given
+// 10, then return '$10.00'.
+//
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed
 
 
 
-// Define a method named percentOf that takes two arguments
-// Returns a String in the format "10.02%" that represents the percentage of one number in another
+// Define a method named percentage that takes two arguments
+//    numerator (number)
+//    denominator (number)
+//
+// Return the percentage of the first argument divided by the second. For
+// example, given 1 and 4, then return '25.0%'.
 
 
 
 // Define a function named isStrictlyEqual that takes two arguments
-// Return true if the two arguments are both equal _and_ have the same type
-// Otherwise return false
+//    value1 (anything)
+//    value2 (anything)
+//
+// If the two arguments are both equal and have the same type
+//    Return true
+// Otherwise
+//    Return false
 //
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness#Strict_equality_using
+//
 // See https://dorey.github.io/JavaScript-Equality-Table/
 
 
 
-// Define a function named isEqual that takes two arguments
-// Return true if the two arguments are both equal regardless of type
-// Otherwise return false
+// Define a function named isLooselyEqual that takes two arguments
+//    value1 (anything)
+//    value2 (anything)
+//
+// If the two arguments are both equal regardless of type
+//    Return true
+// Otherwise
+//    Return false
+//
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness#Loose_equality_using
 
 
 
-// Define a function named remainder that takes two arguments, both whole numbers
-// Return the remainder of the first number divided by the second number
+// Define a function named remainder that takes two arguments
+//    numerator (number)
+//    denominator (number)
+//
+// Return the remainder of the first argument divided by the second. For
+// example, given 4 and 3, then return 1.
 //
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Remainder_()
 
 
 
-// Define a function named isEven that takes one argument that is a whole number
-// Return true if the number is even and false if it is not.
+// Define a function named isEven that takes one argument
+//    integer (number)
 //
-// Hint: What number will give you a remainder of 0 if it is even?
-
-
-
-// Define a function named isOdd that takes one argument that is a whole number
-// Return true if the number is odd and false if it is not.
-
-
-
-// Define a function named isVowel that takes one argument, a letter
-// Returns true if the letter is a vowel, and false if the letter is a consonant.
-// (Treat 'y' as a consonant)
-
-
-
-// Define a function named biggestOfThree which takes three numbers as arguments
-// Return the largest number
+// If the number is even
+//    Return true
+// Otherwise
+//    Return false
 //
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
+// Hint: What number will give you a remainder of 0 if the argument is even?
 
 
 
-// Define a function named biggestOfThreeStrings which takes three strings as arguments
-// Return the longest string
+// Define a function named isOdd that takes one argument
+//    integer (number)
+//
+// If the number is odd
+//    Return true
+// Otherwise
+//    Return false
+
+
+
+// Define a function named isVowel that takes one argument
+//    letter (string)
+//
+// If the letter is a vowel
+//    Return true
+// Otherwise
+//    Return false
+//
+// Treat 'y' as a consonant.
+
+
+
+// Define a function named largestOfThree which takes three arguments
+//    value1 (number)
+//    value2 (number)
+//    value3 (number)
+//
+// Return the largest argument by value
+//
+// See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
+
+
+
+// Define a function named longestOfThree which takes three arguments
+//    value1 (string)
+//    value2 (string)
+//    value3 (string)
+//
+// Return the longest argument by length
 //
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length
+//
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max
 
 
 
-// Define a function named iceCreamPosition that takes two arguments:
-//    pieTemperature
-//    iceCreamFlavor
+// Define a function named iceCreamPosition that takes two arguments
+//    pieTemperature (string)
+//    iceCreamFlavor (string)
 //
 // If iceCreamFlavor is 'cardamom'
-//    return 'not at all' and ignore anything else (this trumps all else)
+//    Return 'not at all' immediately
 // Otherwise
-//  If pieTemperature is 'cold'
-//    return 'on top'
-//  If pieTemperature is 'warm'
-//    return 'on the side'
+//    If pieTemperature is 'cold'
+//      Return 'on top'
+//    If pieTemperature is 'warm'
+//      Return 'on the side'
 
 
 
-// Define a function named isLeapYear that takes one argument, a year
-// Returns true if the year is a leap year, and false if not
+// Define a function named isLeapYear that takes one argument
+//    year (number)
+//
+// If the argument is a leap year
+//    Return true
+// Otherwise
+//    Return false
 //
 // See: https://en.wikipedia.org/wiki/Leap_year#Algorithm
 
 
 
-// Define a function named shout that takes a string, and
-// Return the same string but all in uppercase letters
+// Define a function named shout that takes one argument
+//    message (string)
 //
-// Example: if you are given "Hello There", return "HELLO THERE"
+// Return the same argument but all in uppercase letters. For example, given
+// 'Shut the front door', then return 'SHUT THE FRONT DOOR'
 //
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
 
 
 
-// Define a function named shout that takes a string, and
-// Return the same string but all in lowercase letters, prefixed by "shhh... "
+// Define a function named whisper that takes one argument
+//    message (string)
 //
-// Example: if you are given "Hello There", return "shhh... hello there"
+// Return the same argument but all in lowercase letters and prefixed by
+// 'shhh... '. For exaple, given 'GOLF TIME', then return "shhh... golf time"
 //
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
 
 
 
 // Define a function named stopAt that takes two arguments
-//   - sourceString
-//   - stopString
+//   source (string)
+//   stop (string)
 //
-// Find the location of the stopString in the sourceString
-// Return the sourceString up to the point where sourceString started
+// Return the source all the way up to where source starts. For example, given
+// 'how now brown cow' and 'brown', then return 'how now'.
 //
-// Example: if you get "take me to the water", "to", you'd return "take me"
-// Example: if you get "how now brown cow", "brown", you'd return "how now"
-//
-// NOTE: this will require a combination of 3 different steps
+// Hint: This will require a combination of 3 different steps
 //
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf
+//
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring
+//
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
 
 
 
-// Define a function named capitalize that takes one argument, a string
-// Return a string with the first letter capitalized
+// Define a function named titlize that takes one argument
+//    message (string)
 //
-// Example: if you get "hello there" you would return "Hello there"
+// Return the argument with the first letter capitalized. For example, given
+// 'oh, you', then return 'Oh, you'.
 //
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring
 
 
 
-// Define a function named leftPad5 that takes one argument, a number
-// If the number's length is less than 5
-//    Return a 5-character string with the number, padded by zeroes
-// If the string has 5 or more characters
-//    Return the number as a string
+// Define a function named leftPad5 that takes one argument
+//    word (string)
+//
+// If the argument's length is less than 5
+//    Return the argument but prefixed with spaces until it's 5 characters long
+// If the argument's length is 5 or more characters
+//    Return the argument
 //
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toString
+//
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling#switch_statement
 
 
 
-// Define a method named pickyPickyString that takes one argument
+// Define a method named superPicky that takes one argument
+//    value (anything)
 //
-// If you pass a string, it returns "Thanks!  Got it."
-// If you anything except a string, it returns "Oh no!  I wanted a string, but got a [type]"
-//
-// Example: If you pass "hello", return "Thanks!  Got it."
-// Example: If you pass 2, return "Oh no!  I wanted a string, but got a number"
-// Example: If you pass true, return "Oh no!  I wanted a string, but got a boolean"
+// If the argument is a string,
+//    Return 'Thanks! Got it.'
+// Otherwise
+//    Return 'I wanted a string, but all I got was a stinking [type]'
 //
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof
 
 
 
-// Write a function named calculateTaxRate that takes two arguments:
-//    - annualSalary (number from 1 to 74,900)
-//    - status (a string, which is either 'single' or 'joint')
+// Define a function named calculateTaxRate that takes two arguments
+//    salary (number from 1 to 74,900)
+//    status (string that's either 'single' or 'joint')
 //
-// IF status is anything other than 'single' or 'joint'
-//    return a string that says "better call an accountant"
-// IF the dollar amount is greater than 74,900
-//    return a string that says "better call an accountant"
-// otherwise
-//    use the table from http://www.efile.com/tax-service/tax-calculator/tax-brackets/
-//    to calculate the correct tax rate as a string (for example, "10%" OR "15%")
+// If the status is anything other than 'single' or 'joint'
+//    Return a string that says 'Better call an accountant'
+// If the salary is greater than 74,900
+//    Return a string that says 'Better call an accountant'
+// Otherwise
+//    Return the correct tax rate as a string using the table from http://www.efile.com/tax-service/tax-calculator/tax-brackets/
