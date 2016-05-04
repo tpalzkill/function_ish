@@ -2,11 +2,11 @@
 //
 // Return the sum of all of the numbers in the array.
 function sum(arr) {
-  var sum = 0;
-  for(var i = 0; i < arr.length; i++) {
-    sum += arr[i];
-  }
-  return sum;
+  // var sum = 0;
+  // for(var i = 0; i < arr.length; i++) {
+  //   sum += arr[i];
+  // }
+  // return sum;
 }
 
 // Define a function named product that takes in an array of numbers, arr.
@@ -73,20 +73,34 @@ function merge(arr1, arr2) {
 }
 
 // Define a function named filter that takes in an array of numbers.
+//
+// Return the array with only numbers greater than 100.
 
-// Define a function named unique that takes in an array of numbers/strings
+// Define a function named unique that takes in an array of numbers
 //
 // Return an array that contains each of the elments in the arra but removes any
 // duplicate elements.
+//
+// Example:
+//   unique([1, 2, 1, 1, 2, 3]) -> [1, 2, 3]
 function unique(arr) {
 
 }
+
+// Define a function distance that takes in two objects of the format:
+// {
+//   x: <NUMBER>,
+//   y: <NUMBER>
+// }
+//
+// Return the distance between the two points on a graph.
+// Tip: The distance formula will be helpful: http://cs.selu.edu/~rbyrd/math/distance/
 
 // In the early days of Roman numerals, the Romans didn't bother with any of
 // this new-fangled subtraction 'IX' nonsense. No sir, it was straight addition,
 // biggest to littlest - so 9 was written 'VIIII' and so on.
 //
-// Write a method that, when passed any integer between 1 and 1000.
+// Define a method that, when passed any integer between 1 and 1000.
 // Return a string that represents the roman numeral in the old school format.
 //
 // Example:
@@ -138,7 +152,7 @@ function newSchoolRomanNumeral(num) {
 
 }
 
-// Write a function named replace that is given an array of strings representing
+// Define a function named replace that is given an array of strings representing
 // names of people who are assigned to work this week, and two strings, from and // to, replaces all places where the from string is located with the to string.
 //
 // Example: Ken does not feel like working this week.
@@ -146,12 +160,12 @@ function newSchoolRomanNumeral(num) {
 //    ['Ryan', 'Ryan', 'Ryan', 'Ian', 'Ryan', 'Ryan']
 
 
-// Write a function named find that is given an array of elements and an
+// Define a function named find that is given an array of elements and an
 // element.
 //
 // Returns true if that element exists in the array. false otherwise.
 
-// Write a function named pluck that is given an array of objects, and a
+// Define a function named pluck that is given an array of objects, and a
 // string, "key".
 //
 // Returns an array of elements where each element is the value in each object.
@@ -165,7 +179,7 @@ function newSchoolRomanNumeral(num) {
 // pluck(stooges, 'name') -> ['moe', 'larry', 'curly']
 
 
-// Write a function named group that is given an array of objects and a string,
+// Define a function named group that is given an array of objects and a string,
 // key.
 //
 // Returns an object containing collections grouped by the value of each object
@@ -188,7 +202,7 @@ function newSchoolRomanNumeral(num) {
 //     clubs: [{name: 'ace', suit: 'clubs'}, ...]
 //   }
 
-// Write a function named flatten given an array of arrays (of anything).
+// Define a function named flatten given an array of arrays (of anything).
 //
 // Returns an array that combines all of the elements in the original arrays.
 //
@@ -197,10 +211,19 @@ function newSchoolRomanNumeral(num) {
 //   flatten([[1], [2], [3, [[4]]]]) -> [1, 2, 3, [[4]]]
 // Tip: In the second example, we only need to flatten one level deep.
 
-// Write a function named pick given an object and an array of strings, keys.
+// Define a function named pick given an object and an array of strings, keys.
 //
 // Returns an object that only contains the keys specified.
 //
 // Example:
 // pick({name: 'moe', age: 50, userid: 'moe1'}, ['name', 'age'])
 //   -> {name: 'moe', age: 50}
+
+
+// Define a function, length, that takes in an object.
+//
+// Returns the number of properties in an object.
+//
+// Examples:
+//   length({a: 1, b: 'foo'}) -> 2
+//   length({b: 'foo'}) -> 1
