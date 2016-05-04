@@ -23,8 +23,8 @@ At the command line run:
 cd ~/workspace
 git clone git@github.com:gSchool/javascript-statements.git
 cd javascript-statements
-atom .
-open index.html
+atom ./part1
+open part1/assignment.html
 ```
 
 You'll see a page that looks like this:
