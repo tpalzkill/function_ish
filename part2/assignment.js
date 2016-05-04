@@ -23,6 +23,20 @@ function concatenate(arr) {
 
 }
 
+// Define a function named max that takes in an array of numbers.
+//
+// Return a the maximum number in the array.
+function max(arr) {
+
+}
+
+// Define a function named min that takes in an array of numbers.
+//
+// Return a the minimum number in the array.
+function max(arr) {
+
+}
+
 // Define a function named mean that takes in an array of numbers, arr.
 //
 // Return the mean (the average) of all of the numbers in the array.
@@ -123,3 +137,70 @@ function oldSchoolRomanNumeral(num) {
 function newSchoolRomanNumeral(num) {
 
 }
+
+// Write a function named replace that is given an array of strings representing
+// names of people who are assigned to work this week, and two strings, from and // to, replaces all places where the from string is located with the to string.
+//
+// Example: Ken does not feel like working this week.
+// replace(['Ryan', 'Ken', 'Ken', 'Ian', 'Ryan', 'Ken'], 'Ken', 'Ryan') ->
+//    ['Ryan', 'Ryan', 'Ryan', 'Ian', 'Ryan', 'Ryan']
+
+
+// Write a function named find that is given an array of elements and an
+// element.
+//
+// Returns true if that element exists in the array. false otherwise.
+
+// Write a function named pluck that is given an array of objects, and a
+// string, "key".
+//
+// Returns an array of elements where each element is the value in each object.
+//
+// Example:
+// var stooges = [
+//   {name: 'moe', age: 40},
+//   {name: 'larry', age: 50},
+//   {name: 'curly', age: 60}
+// ];
+// pluck(stooges, 'name') -> ['moe', 'larry', 'curly']
+
+
+// Write a function named group that is given an array of objects and a string,
+// key.
+//
+// Returns an object containing collections grouped by the value of each object
+// at that key
+//
+// Example:
+// var cards = [
+//   {name: 'ace', suit: 'spades'},
+//   {name: '2', suit: 'spades'},
+//   ...
+//   {name: 'ace', suit: 'hearts'},
+//   ...
+// ]
+//
+// group(cards, 'suit') ->
+//   {
+//     spades: [{name: 'ace', suit: 'spades'}, {name: '2', suit: 'spades'} ...]
+//     hearts: [{name: 'ace', suit: 'hearts'}, ...]
+//     diamonds: [{name: 'ace', suit: 'diamonds'}, ...]
+//     clubs: [{name: 'ace', suit: 'clubs'}, ...]
+//   }
+
+// Write a function named flatten given an array of arrays (of anything).
+//
+// Returns an array that combines all of the elements in the original arrays.
+//
+// Examples:
+//   flatten([[1], [2], [3], [4]]) -> [1, 2, 3, 4]
+//   flatten([[1], [2], [3, [[4]]]]) -> [1, 2, 3, [[4]]]
+// Tip: In the second example, we only need to flatten one level deep.
+
+// Write a function named pick given an object and an array of strings, keys.
+//
+// Returns an object that only contains the keys specified.
+//
+// Example:
+// pick({name: 'moe', age: 50, userid: 'moe1'}, ['name', 'age'])
+//   -> {name: 'moe', age: 50}
