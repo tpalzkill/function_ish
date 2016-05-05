@@ -26,16 +26,16 @@ In your web browser, you'll see a page that shows a bunch of failing JavaScript 
 
 Your job is to make all these JavaScript tests pass.
 
-- Open the `part1/assignment.js` file in your text editor.
-- Read the instructions on for each incorrect function.
-- Write code to make each function pass the test.
+1. Open the `part1/assignment.js` file in your text editor.
+1. Read the instructions on for each incorrect function.
+1. Write code to make each function pass the test.
 
-Using the provided links to learn about how to do so. After making a change:
+After making a change:
 
-- Tab over to the browser with `Command` + `Tab`.
-- Refresh the browser with `Command` + `R`.
-- Scroll to the first failing test in red.
-- Use the information provided to help you figure out what's next.
+1. Tab over to the browser with `Command` + `Tab`.
+1. Refresh the browser with `Command` + `R`.
+1. Scroll to the first failing test in red.
+1. Use the information provided to help you figure out what's next.
 
 You'll tab-refreshing hundreds of times during this challenge. Check your work after every small change :)
 
@@ -53,9 +53,9 @@ When you're done with the main assignment, your page should look like this. Gree
 
 Want more? There's a whole 'nother test suite just waiting for you!
 
-- Open the `part1/bonus.html` file in your web browser.
-- Open the `part1/bonus.js` file in your text editor.
-- You know the drill :)
+1. Open the `part1/bonus.html` file in your web browser.
+1. Open the `part1/bonus.js` file in your text editor.
+1. You know the drill :)
 
 ### But wait, there's more!
 
@@ -65,6 +65,6 @@ Part 2 is under construction...
 
 When you're ready to submit your work:
 
-- Push your code up to GitHub, the `origin` remote.
-- Copy the URL to you repository from your web browser's address bar.
-- Paste that URL in the textfield for the related exercise.
+1. Push your code up to GitHub, the `origin` remote.
+1. Copy the URL to you repository from your web browser's address bar.
+1. Paste that URL in the textfield for the related exercise.
