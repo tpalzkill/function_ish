@@ -17,7 +17,7 @@ function sum(arr) {
 // Return the product of all of the numbers in the array. For example, given
 // [1, 2, 3, 4] produces 24. In the event the array is empty. Return 1.
 function product(arr) {
-  // YOUR CODE HERE
+
 }
 
 // Define a function named concatenate that takes in one argument.
@@ -33,30 +33,33 @@ function concatenate(arr) {
 //    arr (array of numbers)
 //
 // Tip: Assume that if the array is empty, we use the -Infinity in JavaScript.
+// Tip: You might find Math.max handy.
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max
 //
 // Return a the maximum number in the array. For example, given [1, 2, -3, 4], // it produces 4.
-function max(arr) {
 
-}
+
 
 // Define a function named min that takes in one argument.
 //    arr (array of numbers)
 //
 // Tip: Assume that if the array is empty, we use Infinity in JavaScript.
+// Tip: You might find Math.min handy.
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min
 //
 // Return a the minimum number in the array. For example, given [1, 2, -3, 4],
 // it produces -3.
-function min(arr) {
 
-}
 
-// Define a function named mean that takes in an array of numbers, arr.
+
+// Define a function named mean that takes in one arguments
+//    arr (array of numbers)
 //
-// Return the mean (the average) of all of the numbers in the array.
+// Return the mean (i.e. average) of all of the numbers in the array. For
+// example, given [1, 2], it produces 1.5.
 // Return null if the array is empty.
-function mean(arr) {
 
-}
+
 
 // Define a function named median that takes in one argument.
 //    arr (array of numbers)
@@ -67,11 +70,13 @@ function mean(arr) {
 // Another tip: The array may not be sorted. There is an easy method in
 // JavaScript called sort that can help you. See:
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
-function median(arr) {
 
-}
 
-// Define a function distance that takes in two objects of the format:
+
+// Define a function, distance, that takes in two arguments
+//    coordinate1: object
+//    coordinate2: object
+// Each argument has the following format:
 // {
 //   x: <NUMBER>,
 //   y: <NUMBER>
@@ -81,24 +86,46 @@ function median(arr) {
 // Tip: Use google to find out how to calculate the distance between two points.
 
 
-// Define a function named contains that is given an array of numbers and a
-// number.
+
+// Define a function named repeat that takes in two arguments
+//     str (string)
+//     times (positive number)
 //
-// Returns true if that number exists in the array, false otherwise.
+// Returns a string that is the input string repeated multiple times. For
+// example, given 'hi' and 4, it should produce 'hihihihi'
 
-(NUMBERS)
-// Define a function named replace that takes in one arguments
-//    arr (array of strings)
-// Each string is a name of person who is assigned to work, and two strings, from and // to, replaces all places where the from string is located with the to string.
+
+
+// Define a function named contains that is given two arguments
+//     arr (array of strings)
+//     str (string)
 //
-// Example: Ken does not feel like working this week.
-// replace(['Ryan', 'Ken', 'Ken', 'Ian', 'Ryan', 'Ken'], 'Ken', 'Ryan') ->
-//    ['Ryan', 'Ryan', 'Ryan', 'Ian', 'Ryan', 'Ryan']
+// Returns true if that string exists in the array, false otherwise.
 
 
 
-// Define a function named pluck that is given an array of objects, and a
-// string, "key".
+// Define a function named replace that takes in three arguments
+//    arr (array of numbers)
+//    from (number)
+//    to (number)
+//
+// Returns an array of numbers where all elements of from are replaced with to
+// Example:
+// replace([1, 3, 2, 1, 3], 1, 4) -> [4, 3, 2, 4, 3]
+
+
+
+// Define a function named filterPassingGrades that takes in one argument:
+//     grades (array of numbers)
+//
+// Return the array with only numbers greater than or equl to 70 (ie the passing
+// scores).
+
+
+
+// Define a function named pluck that takes in two arguments:
+//     arr (array of objects)
+//     key (string)
 //
 // Returns an array of elements where each element is the value in each object.
 //
@@ -111,7 +138,9 @@ function median(arr) {
 // pluck(stooges, 'name') -> ['moe', 'larry', 'curly']
 
 
-// Define a function named flatten given an array of arrays (of anything).
+
+// Define a function named flatten given one argument:
+//     arr (array of arrays)
 //
 // Returns an array that combines all of the elements in the original arrays.
 //
@@ -119,11 +148,21 @@ function median(arr) {
 //   flatten([[1], [2], [3], [4]]) -> [1, 2, 3, 4]
 //   flatten([[1], [2, 3], [4]]) -> [1, 2, 3, 4]
 // Tip: In the second example, we only need to flatten one level deep.
-(ONE MORE EXAMPLE)
+//   flatten([[1], [2, [3]], [4]]) -> [1, 2, [3], 4]
 
-(values function)
 
-// Define a function named pick given an object and an array of strings, keys.
+
+// Define a function named values that takes in one argument:
+//    obj (object)
+//
+// Returns an array of the values of the object. For example, given
+// {a: 1, b: 2, c: 3}, it produces [1, 2, 3]
+
+
+
+// Define a function named pick that takes in two arguments:
+//    obj (object)
+//    keys (array of strings)
 //
 // Returns an object that only contains the keys specified.
 //
@@ -133,27 +172,24 @@ function median(arr) {
 
 
 
-// Define a function named filter that takes in an array of numbers.
+// Define a function named unique that takes in one argument:
+//    arr (array of strings)
 //
-// Return the array with only numbers greater than 100.
-
-// Define a function named unique that takes in an array of strings
-//
-// Return an array that contains each of the elements in the array but removes any
-// duplicate elements.
+// Return an array that contains each of the elements in the array but
+// removes any duplicate elements.
 //
 // Example:
-//   unique([1, 2, 1, 1, 2, 3]) -> [1, 2, 3]
-(strings)
-function unique(arr) {
+//   unique(['a', 'b', 'a', 'c']) -> ['a', 'b', 'c']
 
-}
+
 
 // In the early days of Roman numerals, the Romans didn't bother with any of
 // this new-fangled subtraction 'IX' nonsense. No sir, it was straight addition,
 // biggest to littlest - so 9 was written 'VIIII' and so on.
 //
-// Define a method that, when passed any integer between 1 and 1000.
+// Define a method that takes in one argument
+//     num (number between 1 and 1000)
+//
 // Return a string that represents the roman numeral in the old school format.
 //
 // Example:
@@ -169,7 +205,9 @@ function unique(arr) {
 //      5 = V
 //      1 = I
 //
-// TIP #2: Use the integer division and modulus methods will be helpful
+// TIP #2: Use the Math.floor and modulus methods will be helpful
+// TIP #3: You may like to use the repeat function that you defined above.
+
 
 
 
@@ -199,3 +237,4 @@ function unique(arr) {
 //      5 = V
 //      4 = IV
 //      1 = I
+// TIP #3: You may like to use the repeat function that you defined above.
