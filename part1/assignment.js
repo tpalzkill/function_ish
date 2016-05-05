@@ -273,8 +273,8 @@ function roundUp(decimal) {
 //   source (string)
 //   stop (string)
 //
-// Return the source all the way up to where source starts. For example, given
-// 'how now brown cow' and 'brown', then return 'how now'.
+// Return the source all the way up to the position where stop begins. For
+// example, given 'how now brown cow' and 'brown', then return 'how now'.
 //
 // Hint: This will require a combination of 3 different steps
 //
