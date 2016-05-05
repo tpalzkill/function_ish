@@ -21,45 +21,40 @@ atom .
 open part1/assignment.html
 ```
 
-You'll see a page that looks like this.
+You'll see a page that looks like this. Locate the area that shows how many tests are passing, and how many are failing.
 
 ![](https://students-gschool-production.s3.amazonaws.com/uploads/asset/file/103/javascript-statements-passing-failing.png)
 
-Locate the area that shows how many tests are passing, and how many are failing.
-
-## How to proceed
+### How to proceed
 
 In your text editor, open `assignment.js`.
 
-You'll see instructions on how to proceed.  Write code to make each function pass the test, using the provided links to learn about how to do so.
+You'll see instructions on how to proceed. Write code to make each function pass the test, using the provided links to learn about how to do so.
 
 After making each change:
 
-- Tab over to the browser with `COMMAND+TAB`
-- Refresh the browser with `COMMAND+R`
+- Tab over to the browser with `Command` + `Tab`
+- Refresh the browser with `Command` + `R`
 - Scroll to the first failing test (in red) and use the information provided to help you figure out what's next
 
-You will tab/refresh hundreds of times during this challenge.  Check your work after every small change :)
+You'll tab/refresh hundreds of times during this challenge. Check your work after every small change :)
 
-## Wrestle with it
+### Wrestle with it
 
-You may encounter challenges that seem confusing, or impossible.  Don't fret - _that's the point_!!  This exercise is designed to challenge you.  Resist the urge to just copy/paste code from your classmates, but definitely ask for help and talk to your peers.
+You may encounter challenges that seem confusing or impossible. Don't fret—that's the point! This exercise is designed to challenge you. Resist the urge to just copy/paste code from your classmates, but definitely ask for help and talk to your peers.
 
-## What success looks like
+### What success looks like
 
-When you are done, your page should look like this:
+When you are done, your page should look like this. When you see green check marks next to each exercise, all tests are passing and you're done with the main assignment.
 
 ![](https://students-gschool-production.s3.amazonaws.com/uploads/asset/file/104/javascript-statements-passing.png)
 
-- All tests should be passing
-- You'll see green check boxes next to the things that are done
-
-## Stretch Goal
+### Stretch Goal
 
 Want more?  There's a _whole nother test suite_ just waiting for you!
 
 ```
-open bonus.html
+open part1/bonus.html
 ```
 
-Then look at `bonus.js` to see what to do.  You know the drill :)
+Then look at `bonus.js` to see what to do. You know the drill :)
