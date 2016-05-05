@@ -24,34 +24,35 @@ In your web browser, you'll see a page that shows a bunch of failing JavaScript 
 
 ### How to proceed
 
-In your text editor, open the `part1/assignment.js` file in a new tab.
+Your job is to make all these JavaScript tests pass.
 
-You'll see instructions on how to proceed. Write code to make each function pass the test, using the provided links to learn about how to do so.
+- Open the `part1/assignment.js` file in a new tab in your text editor.
+- Read the instructions on for each incorrect function.
+- Write code to make each function pass the test.
 
-After making each change:
+Using the provided links to learn about how to do so. After making a change:
 
-- Tab over to the browser with `Command` + `Tab`
-- Refresh the browser with `Command` + `R`
-- Scroll to the first failing test (in red) and use the information provided to help you figure out what's next
+- Tab over to the browser with `Command` + `Tab`.
+- Refresh the browser with `Command` + `R`.
+- Scroll to the first failing test in red.
+- Use the information provided to help you figure out what's next.
 
 You'll tab/refresh hundreds of times during this challenge. Check your work after every small change :)
 
 ### Wrestle with it
 
-You may encounter challenges that seem confusing or impossible. Don't fret—that's the point! This exercise is designed to challenge you. Resist the urge to just copy/paste code from your classmates, but definitely ask for help and talk to your peers.
+You may encounter challenges that seem confusing or impossible. Don't fret! This exercise is designed to challenge you. Resist the urge to just copy-paste code from your classmates, but definitely ask for help and talk to your peers.
 
 ### What success looks like
 
-When you are done, your page should look like this. When you see green check marks next to each exercise, all tests are passing and you're done with the main assignment.
+When you're done with the main assignment, your page should look like this. Green check marks next to each exercise means all tests are passing.
 
 ![](images/passing.png)
 
-### Stretch Goal
+### Bonus
 
-Want more?  There's a _whole nother test suite_ just waiting for you!
+Want more? There's a whole 'nother test suite just waiting for you!
 
-```
-open part1/bonus.html
-```
-
-Then look at `bonus.js` to see what to do. You know the drill :)
+- Open the `part1/bonus.html` file in your web browser.
+- Open the `part1/bonus.js` file in a new tab in your text editor.
+- You know the drill :)
