@@ -37,7 +37,7 @@ Using the provided links to learn about how to do so. After making a change:
 - Scroll to the first failing test in red.
 - Use the information provided to help you figure out what's next.
 
-You'll tab/refresh hundreds of times during this challenge. Check your work after every small change :)
+You'll tab-refreshing hundreds of times during this challenge. Check your work after every small change :)
 
 ### Wrestle with it
 
