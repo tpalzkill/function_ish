@@ -26,7 +26,7 @@ In your web browser, you'll see a page that shows a bunch of failing JavaScript 
 
 Your job is to make all these JavaScript tests pass.
 
-- Open the `part1/assignment.js` file in a new tab in your text editor.
+- Open the `part1/assignment.js` file in your text editor.
 - Read the instructions on for each incorrect function.
 - Write code to make each function pass the test.
 
@@ -54,5 +54,5 @@ When you're done with the main assignment, your page should look like this. Gree
 Want more? There's a whole 'nother test suite just waiting for you!
 
 - Open the `part1/bonus.html` file in your web browser.
-- Open the `part1/bonus.js` file in a new tab in your text editor.
+- Open the `part1/bonus.js` file in your text editor.
 - You know the drill :)
