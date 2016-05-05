@@ -11,17 +11,14 @@ To complete these challenges, you must be able to:
 
 ### Setup
 
-First, you need to get this code onto your machine. To do so, clone this repository. Open the Terminal and run the following commands.
+To get started, get this code onto your machine by following these setup instructions.
 
-```shell
-cd ~/Projects/week1/
-git clone https://github.com/gSchool/javascript-statements.git
-cd javascript-statements
-atom .
-open part1/assignment.html
-```
+1. Fork this repository to your own GitHub account.
+1. Clone your forked repository to your development environment.
+1. Open the repository's project directory in your text editor.
+1. Open the `part1/assignment.html` file in your web browser.
 
-You'll see a page that looks like this. Locate the area that shows how many tests are passing, and how many are failing.
+You'll see a page that looks like this. Locate the area that shows how many tests are passing and how many are failing.
 
 ![](https://students-gschool-production.s3.amazonaws.com/uploads/asset/file/103/javascript-statements-passing-failing.png)
 
