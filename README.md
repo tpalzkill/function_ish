@@ -57,6 +57,10 @@ Want more? There's a whole 'nother test suite just waiting for you!
 - Open the `part1/bonus.js` file in your text editor.
 - You know the drill :)
 
+### But wait, there's more!
+
+Part 2 is under construction...
+
 ### Submitting your work
 
 When you're ready to submit your work:
