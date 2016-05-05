@@ -18,13 +18,13 @@ To get started, get this code onto your machine by following these setup instruc
 1. Open the repository's project directory in your text editor.
 1. Open the `part1/assignment.html` file in your web browser.
 
-You'll see a page that looks like this. Locate the area that shows how many tests are passing and how many are failing.
+In your web browser, you'll see a page that shows a bunch of failing JavaScript tests. Locate the area that shows how many tests are passing and how many are failing.
 
-![](https://students-gschool-production.s3.amazonaws.com/uploads/asset/file/103/javascript-statements-passing-failing.png)
+![](images/failing.png)
 
 ### How to proceed
 
-In your text editor, open `assignment.js`.
+In your text editor, open the `part1/assignment.js` file in a new tab.
 
 You'll see instructions on how to proceed. Write code to make each function pass the test, using the provided links to learn about how to do so.
 
