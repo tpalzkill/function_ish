@@ -1,33 +1,27 @@
-## Welcome to JavaScript!!
+# JavaScript Fundamentals
 
-There's so much to do!  Let's get started.
+Welcome to JavaScript. There's so much to do so let's jump right in.
 
-## Objectives
+### Objectives
 
-By the time you complete these challenges, you should be able to:
+To complete these challenges, you must be able to:
 
 - Write basic JavaScript statements and expressions
-- Use online documentation to help solve problems using JavaScript
+- Use online documentation to help solve JavaScript problems
 
-## Setup
+### Setup
 
-First, you need to get this code onto your machine.  To do so, clone this repository.
+First, you need to get this code onto your machine. To do so, clone this repository. Open the Terminal and run the following commands.
 
-PROTIP: Make sure you use the SSH URL
-
-![](https://students-gschool-production.s3.amazonaws.com/uploads/asset/file/102/github-ssh-urls.png)
-
-At the command line run:
-
-```
-cd ~/workspace
-git clone git@github.com:gSchool/javascript-statements.git
+```shell
+cd ~/Projects/week1/
+git clone https://github.com/gSchool/javascript-statements.git
 cd javascript-statements
-atom ./part1
+atom .
 open part1/assignment.html
 ```
 
-You'll see a page that looks like this:
+You'll see a page that looks like this.
 
 ![](https://students-gschool-production.s3.amazonaws.com/uploads/asset/file/103/javascript-statements-passing-failing.png)
 
