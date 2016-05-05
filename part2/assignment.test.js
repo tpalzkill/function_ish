@@ -32,7 +32,7 @@ window.onload = function() {
     });
 
     test('calculates the max number in an empty array', function() {
-      assert.equal(max([]), Number.MIN_VALUE);
+      assert.equal(max([]), -Infinity);
     });
   });
 
@@ -43,7 +43,7 @@ window.onload = function() {
     });
 
     test('calculates the min number in an empty array', function() {
-      assert.equal(max([]), Number.MAX_VALUE);
+      assert.equal(min([]), Infinity);
     });
   });
 
@@ -64,26 +64,88 @@ window.onload = function() {
     });
   });
 
-  suite('#greet', function() {
-    test('greets a person by their full name', function() {
-      assert.equal(greet('Bart', 'Simpson'), 'Hello, Bart Simpson!');
-      assert.equal(greet('Mona', 'Lisa'), 'Hello, Mona Lisa!');
-    });
-  });
-
-  suite('#merge', function() {
-    test('merges two sorted arrays', function() {
-      assert.equal(merge([1, 3, 5], [2, 4, 6]), [1, 2, 3, 4, 5, 6]);
-      assert.equal(merge([1, 3, 5], [1, 2]), [1, 1, 2, 3, 4, 5]);
-      assert.equal(merge([], [1, 2]), [1, 2]);
-      assert.equal(merge([1, 2], []), [1, 2]);
-    });
-  });
-
   suite('#distance', function() {
     test('returns the distance between two points', function() {
-      assert.equal(distance({x: 0, y: 3}, {x: 0, y: 0}), 3);
-      assert.equal(distance({x: -1, y: 1}, {x: 0, y: 0}), Math.sqrt(2));
+      assert.approximately(distance({x: 0, y: 3}, {x: 0, y: 0}), 3, 0.01);
+      assert.approximately(distance({x: -1, y: 1}, {x: 0, y: 0}), Math.sqrt(2), 0.01);
+    });
+  });
+
+  suite('#repeat', function() {
+    test('repeats a string multiple times', function() {
+      assert.equal(repeat('hi', 4), 'hihihihi');
+      assert.equal(repeat('ken', 3), 'kenkenken');
+      assert.equal(repeat('hello', 1), 'hello');
+    });
+  });
+
+  suite('#contains', function() {
+    test('checks if a string is in the array', function() {
+      assert.equal(contains(['Ryan', 'Ken', 'Ian'], 'Ken'), true);
+      assert.equal(contains([], 'Ken'), false);
+      assert.equal(contains(['Ryan', 'Ken', 'Ian', 'Lionel'], 'Adam'), false);
+    });
+  });
+
+  suite('#replace', function() {
+    test('replaces values in an array with another', function() {
+      assert.deepEqual(replace([1, 3, 2, 1, 3], 1, 4), [4, 3, 2, 4, 3]);
+      assert.deepEqual(replace([], 1, 4), []);
+      assert.deepEqual(replace([1, 3, 2, 1, 3], 4, 1), [1, 3, 2, 1, 3]);
+    });
+  });
+
+  suite('#filterPassingGrades', function() {
+    test('filters all passing grades', function() {
+      assert.deepEqual(filterPassingGrades([]), []);
+      assert.deepEqual(filterPassingGrades([100, 45, 90, 60]), [100, 90]);
+      assert.deepEqual(filterPassingGrades([100, 45, 70]), [100, 70]);
+      assert.deepEqual(filterPassingGrades([0, 45, 40]), []);
+    });
+  });
+
+  suite('#pluck', function() {
+    test('grabs the values from an array of object for a specific key', function() {
+      assert.deepEqual(pluck([], 'foo'), []);
+      var stooges = [
+        {name: 'moe', age: 40},
+        {name: 'larry', age: 50},
+        {name: 'curly', age: 60}
+      ];
+      assert.deepEqual(pluck(stooges, 'name'), ['moe', 'larry', 'curly']);
+    });
+  });
+
+  suite('#flatten', function() {
+    test('flattens an array of arrays', function() {
+      assert.deepEqual(flatten([]), []);
+      assert.deepEqual(flatten([[1], [2], [3], [4]]), [1, 2, 3, 4]);
+      assert.deepEqual(flatten([[1], [2, 3], [4]]), [1, 2, 3, 4]);
+      assert.deepEqual(flatten([[1], [2], [3, [[4]]]]), [1, 2, 3, [[4]]]);
+    });
+  });
+
+  suite('#values', function() {
+    test('returns values of an object', function() {
+      assert.deepEqual(values({}), []);
+      assert.deepEqual(values({a: 1, b: 'foo'}), [1, 'foo']);
+      assert.deepEqual(values({b: 'foo'}), ['foo']);
+    });
+  });
+
+  suite('#pick', function() {
+    test('picks an array of property names from an object', function() {
+      assert.deepEqual(pick({name: 'moe', age: 50, userid: 'moe1'}, []), {});
+      assert.deepEqual(pick({name: 'moe', age: 50, userid: 'moe1'},
+        ['name', 'age']), {name: 'moe', age: 50});
+    });
+  });
+
+  suite('#unique', function() {
+    test('returns an array with only unique values', function() {
+      assert.sameMembers(unique([]), []);
+      assert.sameMembers(unique(['a', 'b', 'a', 'c']), ['a', 'b', 'c']);
+      assert.sameMembers(unique(['a', 'b', 'c']), ['a', 'b', 'c']);
     });
   });
 
@@ -126,73 +188,8 @@ window.onload = function() {
       assert.equal(newSchoolRomanNumeral(72), 'LXXII');
       assert.equal(newSchoolRomanNumeral(134), 'CXXXIV');
       assert.equal(newSchoolRomanNumeral(273), 'CCLXXIII');
-      assert.equal(newSchoolRomanNumeral(749), 'DCCXCVIV');
+      assert.equal(newSchoolRomanNumeral(749), 'DCCXLIX');
       assert.equal(newSchoolRomanNumeral(1000), 'M');
-    });
-  });
-
-  suite('#replace', function() {
-    test('replaces values in an array with another', function() {
-      assert.equal(replace(['Ryan', 'Ken', 'Ken', 'Ian', 'Ryan', 'Ken'], 'Ken', 'Ryan'), ['Ryan', 'Ryan', 'Ryan', 'Ian', 'Ryan', 'Ryan']);
-      assert.equal(replace(['Ryan', 'Ian', 'Ryan'], 'Ken', 'Ryan'), ['Ryan', 'Ian', 'Ryan']);
-    });
-  });
-
-  suite('#contains', function() {
-    test('checks if a number is in the array', function() {
-      assert.equal(contains([1, 2, 3, 4, 5], 4), true);
-      assert.equal(contains([], 4), false);
-      assert.equal(contains([1, 2, 3, 4, 5], 6), false);
-    });
-  });
-
-  suite('#pluck', function() {
-    test('grabs the values from an array of object for a specific key', function() {
-      assert.equal(pluck([], 'foo'), []);
-      var stooges = [
-        {name: 'moe', age: 40},
-        {name: 'larry', age: 50},
-        {name: 'curly', age: 60}
-      ];
-      assert.equal(pluck(stooges, 'name'), ['moe', 'larry', 'curly']);
-    });
-  });
-
-  suite('#flatten', function() {
-    test('flattens an array of arrays', function() {
-      assert.equal(flatten([]), []);
-      assert.equal(flatten([[1], [2], [3], [4]]), [1, 2, 3, 4]);
-      assert.equal(flatten([[1], [2], [3, [[4]]]]), [1, 2, 3, [[4]]]);
-    });
-  });
-
-  suite('#length', function() {
-    test('returns true if the number is even', function() {
-      assert.equal(length({}), 0);
-      assert.equal(length({a: 1, b: 'foo'}), 2);
-      assert.equal(length({b: 'foo'}), 1);
-    });
-  });
-
-  suite('#pick', function() {
-    test('picks an array of property names from an object', function() {
-      assert.equal(pick({name: 'moe', age: 50, userid: 'moe1'}, []), {});
-      assert.equal(pick({name: 'moe', age: 50, userid: 'moe1'},
-        ['name', 'age']), {name: 'moe', age: 50});
-    });
-  });
-
-  suite('#group', function() {
-    test('groups arrays of objects by a specific key', function() {
-      assert.equal(group([], 'foo'), {});
-      assert.equal(group([{}], 'foo'), {});
-    });
-
-    test('returns false if the letter is not a vowel', function() {
-      assert.equal(isVowel('z'), false);
-      assert.equal(isVowel('b'), false);
-      assert.equal(isVowel('d'), false);
-      assert.equal(isVowel('y'), false);
     });
   });
 
