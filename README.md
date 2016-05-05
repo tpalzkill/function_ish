@@ -44,7 +44,7 @@ You may encounter challenges that seem confusing or impossible. Don't fret—tha
 
 When you are done, your page should look like this. When you see green check marks next to each exercise, all tests are passing and you're done with the main assignment.
 
-![](https://students-gschool-production.s3.amazonaws.com/uploads/asset/file/104/javascript-statements-passing.png)
+![](images/passing.png)
 
 ### Stretch Goal
 
