@@ -56,3 +56,11 @@ Want more? There's a whole 'nother test suite just waiting for you!
 - Open the `part1/bonus.html` file in your web browser.
 - Open the `part1/bonus.js` file in your text editor.
 - You know the drill :)
+
+### Submitting your work
+
+When you're ready to submit your work:
+
+- Push your code up to GitHub, the `origin` remote.
+- Copy the URL to you repository from your web browser's address bar.
+- Paste that URL in the textfield for the related exercise.
