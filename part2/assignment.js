@@ -25,6 +25,8 @@ function concatenate(arr) {
 
 // Define a function named max that takes in an array of numbers.
 //
+// Tip: Assume that if the array is empty, we use the smallest number in JavaScript. See:
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MIN_VALUE
 // Return a the maximum number in the array.
 function max(arr) {
 
@@ -32,58 +34,27 @@ function max(arr) {
 
 // Define a function named min that takes in an array of numbers.
 //
+// // Tip: Assume that if the array is empty, we use the largest number in JavaScript.
+//
 // Return a the minimum number in the array.
-function max(arr) {
+function min(arr) {
 
 }
 
 // Define a function named mean that takes in an array of numbers, arr.
 //
 // Return the mean (the average) of all of the numbers in the array.
+// Return null if the array is empty.
 function mean(arr) {
 
 }
 
 // Define a function named median that takes in an array of numbers, arr.
 //
-// Return the median of all of the numbers.
+// Return the median of all of the numbers. Return null if the array is empty.
 // Tip: See https://www.mathsisfun.com/definitions/median.html to understand
-// how the median works.
+// how to calculate the median.
 function median(arr) {
-
-}
-
-// Define a function named mode that takes in an array of numbers, arr.
-//
-// Return the mode of all of the numbers.
-// Tip: See https://www.mathsisfun.com/definitions/mode.html to understand
-// how the mode works.
-function mode(arr) {
-
-}
-
-// Define a function named merge that takes in two arrays of numbers.
-// We can assume that the numbers in each array are sorted.
-//
-// Return a new array that contains all the numbers in each array still sorted.
-// Tip: Each array may contain duplicate numbers. You need to ensure that each
-// number is still accounted for.
-function merge(arr1, arr2) {
-
-}
-
-// Define a function named filter that takes in an array of numbers.
-//
-// Return the array with only numbers greater than 100.
-
-// Define a function named unique that takes in an array of numbers
-//
-// Return an array that contains each of the elments in the arra but removes any
-// duplicate elements.
-//
-// Example:
-//   unique([1, 2, 1, 1, 2, 3]) -> [1, 2, 3]
-function unique(arr) {
 
 }
 
@@ -160,10 +131,10 @@ function newSchoolRomanNumeral(num) {
 //    ['Ryan', 'Ryan', 'Ryan', 'Ian', 'Ryan', 'Ryan']
 
 
-// Define a function named find that is given an array of elements and an
-// element.
+// Define a function named contains that is given an array of numbers and a
+// number.
 //
-// Returns true if that element exists in the array. false otherwise.
+// Returns true if that number exists in the array. false otherwise.
 
 // Define a function named pluck that is given an array of objects, and a
 // string, "key".
@@ -177,6 +148,35 @@ function newSchoolRomanNumeral(num) {
 //   {name: 'curly', age: 60}
 // ];
 // pluck(stooges, 'name') -> ['moe', 'larry', 'curly']
+
+
+// Define a function named flatten given an array of arrays (of anything).
+//
+// Returns an array that combines all of the elements in the original arrays.
+//
+// Examples:
+//   flatten([[1], [2], [3], [4]]) -> [1, 2, 3, 4]
+//   flatten([[1], [2], [3, [[4]]]]) -> [1, 2, 3, [[4]]]
+// Tip: In the second example, we only need to flatten one level deep.
+
+
+// Objects do not have a length property. Define a function, length, that takes
+// in an object.
+//
+// Returns the number of properties in an object.
+//
+// Examples:
+//   length({a: 1, b: 'foo'}) -> 2
+//   length({b: 'foo'}) -> 1
+
+
+// Define a function named pick given an object and an array of strings, keys.
+//
+// Returns an object that only contains the keys specified.
+//
+// Example:
+// pick({name: 'moe', age: 50, userid: 'moe1'}, ['name', 'age'])
+//   -> {name: 'moe', age: 50}
 
 
 // Define a function named group that is given an array of objects and a string,
@@ -202,28 +202,26 @@ function newSchoolRomanNumeral(num) {
 //     clubs: [{name: 'ace', suit: 'clubs'}, ...]
 //   }
 
-// Define a function named flatten given an array of arrays (of anything).
-//
-// Returns an array that combines all of the elements in the original arrays.
-//
-// Examples:
-//   flatten([[1], [2], [3], [4]]) -> [1, 2, 3, 4]
-//   flatten([[1], [2], [3, [[4]]]]) -> [1, 2, 3, [[4]]]
-// Tip: In the second example, we only need to flatten one level deep.
 
-// Define a function named pick given an object and an array of strings, keys.
+// Define a function named merge that takes in two arrays of numbers.
+// We can assume that the numbers in each array are sorted.
 //
-// Returns an object that only contains the keys specified.
+// Return a new array that contains all the numbers in each array still sorted.
+// Tip: Each array may contain duplicate numbers. You need to ensure that each
+// number is still accounted for.
+
+
+// Define a function named filter that takes in an array of numbers.
+//
+// Return the array with only numbers greater than 100.
+
+// Define a function named unique that takes in an array of numbers
+//
+// Return an array that contains each of the elments in the arra but removes any
+// duplicate elements.
 //
 // Example:
-// pick({name: 'moe', age: 50, userid: 'moe1'}, ['name', 'age'])
-//   -> {name: 'moe', age: 50}
+//   unique([1, 2, 1, 1, 2, 3]) -> [1, 2, 3]
+function unique(arr) {
 
-
-// Define a function, length, that takes in an object.
-//
-// Returns the number of properties in an object.
-//
-// Examples:
-//   length({a: 1, b: 'foo'}) -> 2
-//   length({b: 'foo'}) -> 1
+}
