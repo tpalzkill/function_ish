@@ -172,32 +172,20 @@ window.onload = function() {
       assert.equal(length({a: 1, b: 'foo'}), 2);
       assert.equal(length({b: 'foo'}), 1);
     });
+  });
 
-    test('returns false if the number is not even', function() {
-      assert.equal(isEven(11), false);
-      assert.equal(isEven(15), false);
+  suite('#pick', function() {
+    test('picks an array of property names from an object', function() {
+      assert.equal(pick({name: 'moe', age: 50, userid: 'moe1'}, []), {});
+      assert.equal(pick({name: 'moe', age: 50, userid: 'moe1'},
+        ['name', 'age']), {name: 'moe', age: 50});
     });
   });
 
-  suite('#isOdd', function() {
-    test('returns true if the number is odd', function() {
-      assert.equal(isOdd(11), true);
-      assert.equal(isOdd(15), true);
-    });
-
-    test('returns false if the number is not odd', function() {
-      assert.equal(isOdd(10), false);
-      assert.equal(isOdd(14), false);
-    });
-  });
-
-  suite('#isVowel', function() {
-    test('returns true if the letter is a vowel', function() {
-      assert.equal(isVowel('a'), true);
-      assert.equal(isVowel('e'), true);
-      assert.equal(isVowel('i'), true);
-      assert.equal(isVowel('o'), true);
-      assert.equal(isVowel('u'), true);
+  suite('#group', function() {
+    test('groups arrays of objects by a specific key', function() {
+      assert.equal(group([], 'foo'), {});
+      assert.equal(group([{}], 'foo'), {});
     });
 
     test('returns false if the letter is not a vowel', function() {
@@ -205,141 +193,6 @@ window.onload = function() {
       assert.equal(isVowel('b'), false);
       assert.equal(isVowel('d'), false);
       assert.equal(isVowel('y'), false);
-    });
-  });
-
-  suite('#largestOfThree', function() {
-    test('returns the largest argument by value', function() {
-      assert.equal(largestOfThree(9, 6, 3), 9);
-      assert.equal(largestOfThree(0, 7, 4), 7);
-      assert.equal(largestOfThree(1, 2, 5), 5);
-    });
-  });
-
-  suite('#longestOfThree', function() {
-    test('returns the longest argument by length', function() {
-      assert.equal(longestOfThree('eight', 'two', 'five'), 'eight');
-      assert.equal(longestOfThree('zero', 'seven', 'four'), 'seven');
-      assert.equal(longestOfThree('nine', 'six', 'three'), 'three');
-    });
-  });
-
-  suite('#iceCreamPosition', function() {
-    test('returns "not at all" if the ice cream flavor is cardamom', function() {
-      assert.equal(iceCreamPosition('warm', 'cardamom'), 'not at all');
-      assert.equal(iceCreamPosition('cold', 'cardamom'), 'not at all');
-    });
-
-    test('returns "on the side" if the pie temperature is warm', function() {
-      assert.equal(iceCreamPosition('warm', 'vanilla'), 'on the side');
-      assert.equal(iceCreamPosition('warm', 'chocolate'), 'on the side');
-    });
-
-    test('returns "on top" if the pie temperature is cold', function() {
-      assert.equal(iceCreamPosition('cold', 'vanilla'), 'on top');
-      assert.equal(iceCreamPosition('cold', 'chocolate'), 'on top');
-    });
-  });
-
-  suite('#isLeapYear', function() {
-    test('returns true if the number is a leap year, otherwise it does not', function() {
-      assert.equal(isLeapYear(1900), true);
-      assert.equal(isLeapYear(1996), true);
-    });
-
-    test('returns false if the number is not a leap year', function() {
-      assert.equal(isLeapYear(2000), false);
-      assert.equal(isLeapYear(1901), false);
-      assert.equal(isLeapYear(2001), false);
-    });
-  });
-
-  suite('#shout', function() {
-    test('converts the argument to uppercase letter', function() {
-      assert.equal(shout('whoo hoo'), 'WHOO HOO');
-      assert.equal(shout('sOmeTHing'), 'SOMETHING');
-    });
-  });
-
-  suite('#whisper', function() {
-    test("converts the arguemnt to lowercase letters prefixed by 'shhh...'", function() {
-      assert.equal(whisper('bAnanA peEl'), 'shhh... banana peel');
-      assert.equal(whisper('Tracy Morgan'), 'shhh... tracy morgan');
-    });
-  });
-
-  suite('#stopAt', function() {
-    test('returns the first argument up to the last argument', function() {
-      assert.equal(stopAt('check this out now', 'out'), 'check this');
-      assert.equal(stopAt('turn on the TV', 'the'), 'turn on');
-    });
-  });
-
-  suite('#capitalize', function() {
-    test('returns the message with the first letter capitalized', function() {
-      assert.equal(capitalize('secret bitcoin mine'), 'Secret bitcoin mine');
-      assert.equal(capitalize('british football'), 'British football');
-    });
-  });
-
-  suite('#leftPad5', function() {
-    test('returns the argument with padded by spaces if its length is less than 5', function() {
-      assert.equal(leftPad5('a'), '    a');
-      assert.equal(leftPad5('go'), '   go');
-      assert.equal(leftPad5('dog'), '  dog');
-      assert.equal(leftPad5('tree'), ' tree');
-    });
-
-    test('returns the argument if its length is 5 or more characters', function() {
-      assert.equal(leftPad5('socks'), 'socks');
-      assert.equal(leftPad5('drawer'), 'drawer');
-    });
-  });
-
-  suite('#superPicky', function() {
-    test("returns 'Thanks! Got it.' if given a string", function() {
-      assert.equal(superPicky('hello'), 'Thanks! Got it.');
-      assert.equal(superPicky('there'), 'Thanks! Got it.');
-    });
-
-    test('returns an error message if given anything other than a string', function() {
-      assert.equal(superPicky(1), 'I wanted a string, but all I got was a stinking number');
-      assert.equal(superPicky(Math.random()), 'I wanted a string, but all I got was a stinking number');
-      assert.equal(superPicky(true), 'I wanted a string, but all I got was a stinking boolean');
-      assert.equal(superPicky(false), 'I wanted a string, but all I got was a stinking boolean');
-      assert.equal(superPicky(function() {}), 'I wanted a string, but all I got was a stinking function');
-      assert.equal(superPicky({}), 'I wanted a string, but all I got was a stinking object');
-      assert.equal(superPicky([]), 'I wanted a string, but all I got was a stinking object');
-    });
-  });
-
-  suite('#calculateTaxRate', function() {
-    test('returns a warning if the status is incorrect', function() {
-      assert.equal(calculateTaxRate(100, 'separate'), 'Better call an accountant');
-      assert.equal(calculateTaxRate(100, 'head of household'), 'Better call an accountant');
-    });
-
-    test('returns a warning if the amount is over 74,900', function() {
-      assert.equal(calculateTaxRate(74901, 'single'), 'Better call an accountant');
-      assert.equal(calculateTaxRate(100000, 'joint'), 'Better call an accountant');
-    });
-
-    test('returns the correct tax rate for a single filer', function() {
-      assert.equal(calculateTaxRate(1, 'single'), '10%');
-      assert.equal(calculateTaxRate(100, 'single'), '10%');
-      assert.equal(calculateTaxRate(9225, 'single'), '10%');
-      assert.equal(calculateTaxRate(9226, 'single'), '15%');
-      assert.equal(calculateTaxRate(15000, 'single'), '15%');
-      assert.equal(calculateTaxRate(37450, 'single'), '15%');
-    });
-
-    test('returns the correct tax rate for a joint filer', function() {
-      assert.equal(calculateTaxRate(1, 'joint'), '10%');
-      assert.equal(calculateTaxRate(100, 'joint'), '10%');
-      assert.equal(calculateTaxRate(18450, 'joint'), '10%');
-      assert.equal(calculateTaxRate(18451, 'joint'), '15%');
-      assert.equal(calculateTaxRate(25000, 'joint'), '15%');
-      assert.equal(calculateTaxRate(74900, 'joint'), '15%');
     });
   });
 
