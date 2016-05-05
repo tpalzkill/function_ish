@@ -117,7 +117,7 @@ function roundUp(decimal) {
 
 
 
-// Define a method named percentage that takes two arguments
+// Define a function named percentage that takes two arguments
 //    numerator (number)
 //    denominator (number)
 //
@@ -310,7 +310,7 @@ function roundUp(decimal) {
 
 
 
-// Define a method named superPicky that takes one argument
+// Define a function named superPicky that takes one argument
 //    value (anything)
 //
 // If the argument is a string,
