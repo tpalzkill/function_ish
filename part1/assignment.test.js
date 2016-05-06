@@ -37,6 +37,7 @@ window.onload = function() {
   suite('#toFahrenheit', function() {
     test('converts the Celsius to Fahrenheit rounded to the nearest integer', function() {
       assert.equal(toFahrenheit(30), 86);
+      assert.equal(toFahrenheit(31), 88);
       assert.equal(toFahrenheit(-5), 23);
     });
   });
@@ -225,6 +226,11 @@ window.onload = function() {
     test('returns "on top" if the pie temperature is cold', function() {
       assert.equal(iceCreamPosition('cold', 'vanilla'), 'on top');
       assert.equal(iceCreamPosition('cold', 'chocolate'), 'on top');
+    });
+
+    test('returns "up to you" if the pie temperature is neither warm or cold', function() {
+      assert.equal(iceCreamPosition('luke warm', 'vanilla'), 'up to you');
+      assert.equal(iceCreamPosition('ice cold', 'chocolate'), 'up to you');
     });
   });
 
