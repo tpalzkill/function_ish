@@ -2,7 +2,7 @@
 //    arr (array of numbers)
 //
 // Return the sum of all of the numbers in the array. For example, given
-// [1, 2, 3, 4] produces 10. In the event the array is empty. Return 0.
+// [1, 2, 3, 4], it produces 10. In the event the array is empty. Return 0.
 function sum(arr) {
   // var sum = 0;
   // for(var i = 0; i < arr.length; i++) {
@@ -32,23 +32,23 @@ function concatenate(arr) {
 // Define a function named max that takes in one argument.
 //    arr (array of numbers)
 //
+// Return a the maximum number in the array. For example, given [1, 2, -3, 4], // it produces 4.
+//
 // Tip: Assume that if the array is empty, we use the -Infinity in JavaScript.
 // Tip: You might find Math.max handy.
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max
-//
-// Return a the maximum number in the array. For example, given [1, 2, -3, 4], // it produces 4.
 
 
 
 // Define a function named min that takes in one argument.
 //    arr (array of numbers)
 //
+// Return a the minimum number in the array. For example, given [1, 2, -3, 4],
+// it produces -3.
+//
 // Tip: Assume that if the array is empty, we use Infinity in JavaScript.
 // Tip: You might find Math.min handy.
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min
-//
-// Return a the minimum number in the array. For example, given [1, 2, -3, 4],
-// it produces -3.
 
 
 
@@ -74,8 +74,8 @@ function concatenate(arr) {
 
 
 // Define a function, distance, that takes in two arguments
-//    coordinate1: object
-//    coordinate2: object
+//    coord1: object
+//    coord2: object
 // Each argument has the following format:
 // {
 //   x: <NUMBER>,
@@ -118,8 +118,8 @@ function concatenate(arr) {
 // Define a function named filterPassingGrades that takes in one argument:
 //     grades (array of numbers)
 //
-// Return the array with only numbers greater than or equl to 70 (ie the passing
-// scores).
+// Return the array with only numbers greater than or equal to 70 (ie the
+// passing scores).
 
 
 
@@ -187,7 +187,7 @@ function concatenate(arr) {
 // this new-fangled subtraction 'IX' nonsense. No sir, it was straight addition,
 // biggest to littlest - so 9 was written 'VIIII' and so on.
 //
-// Define a method that takes in one argument
+// Define a function that takes in one argument
 //     num (number between 1 and 1000)
 //
 // Return a string that represents the roman numeral in the old school format.
@@ -215,7 +215,7 @@ function concatenate(arr) {
 // number before a larger one meant you had to subtract the smaller one. As a
 // result of this development, you must now suffer.
 //
-// Rewrite your previous program so that, when passed any integer between 1 and
+// Rewrite your previous function so that, when passed any integer between 1 and
 // 1000
 // Return a string containing the proper modern Roman numeral.
 //
