@@ -107,10 +107,10 @@ function roundUp(decimal) {
 
 
 
-// Define a function toDolla that takes one number argument
+// Define a function toDolla that takes one argument
 //    amount (number)
 //
-// Return the argument converted to dollar currency string. For example, given
+// Return the argument converted to a dollar currency string. For example, given
 // 10, then return '$10.00'.
 //
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed
@@ -234,6 +234,8 @@ function roundUp(decimal) {
 //      Return 'on top'
 //    If pieTemperature is 'warm'
 //      Return 'on the side'
+// Otherwise
+//    Return 'up to you'
 
 
 
@@ -303,10 +305,6 @@ function roundUp(decimal) {
 //    Return the argument but prefixed with spaces until it's 5 characters long
 // If the argument's length is 5 or more characters
 //    Return the argument
-//
-// See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toString
-//
-// See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling#switch_statement
 
 
 
@@ -316,7 +314,7 @@ function roundUp(decimal) {
 // If the argument is a string,
 //    Return 'Thanks! Got it.'
 // Otherwise
-//    Return 'I wanted a string, but all I got was a stinking [type]'
+//    Return 'I wanted a string, but all I got was a stinking TYPE'
 //
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof
 
