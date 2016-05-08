@@ -1,17 +1,30 @@
 # JavaScript Fundamentals
 
-Welcome to JavaScript. There's so much to do so let's jump right in.
+In this exercise, you'll need to solve a set of increasingly difficult puzzles aimed at helping you master the fundamentals of JavaScript. The exercise is split into two parts.
 
-### Objectives
+Part 1 has you wrestling with core JavaScript concepts.
 
-To complete these challenges, you must be able to:
+- Primitives
+- Functions
+- Declarations
+- Globals
+- Operators
+- Control flow
 
-- Write basic JavaScript statements and expressions
-- Use online documentation to help solve JavaScript problems
+Part 2 builds on the above and has you wrestling with more essential concepts.
+
+- Functions (again)
+- Arrays
+- Objects
+- Iterations
+
+Furthermore, each part has two components—an **assignment** and a **bonus**. Complete the each part's assignment before moving on to its respective bonus or the next part's assignment.
+
+**TIP:** You're encouraged to use online documentation to lookup how to use unfamiliar concepts.
 
 ### Setup
 
-To get started, get this code onto your machine by following these setup instructions.
+To get started, download this code onto your machine by following these setup instructions.
 
 1. Fork this repository to your own GitHub account.
 1. Clone your forked repository to your development environment.
@@ -24,34 +37,34 @@ In your web browser, you'll see a page that shows a bunch of failing JavaScript 
 
 ### How to proceed
 
-Your job is to make all these JavaScript tests pass.
+Your job is to make all these JavaScript tests pass by completing their respective puzzle.
 
 1. Open the `part1/assignment.js` file in your text editor.
-1. Read the instructions on for each incorrect function.
-1. Write code to make each function pass the test.
+1. Read the instructions for each puzzle.
+1. Solve the puzzle by writing JavaScript.
 
-After making a change:
+Once it's ready, test your solution.
 
-1. Tab over to the browser with `Command` + `Tab`.
-1. Refresh the browser with `Command` + `R`.
-1. Scroll to the first failing test in red.
-1. Use the information provided to help you figure out what's next.
+1. Tab over to the browser with `Command + Tab`.
+1. Refresh the browser with `Command + R`.
+1. Scroll to the puzzle's test and see if it's still red.
+1. Once the test is green, you've solved the puzzle.
 
-You'll tab-refreshing hundreds of times during this challenge. Check your work after every small change :)
+You can see how each test invokes the puzzle's function by clicking on the test description.
+
+![](images/invoked.png)
 
 ### Wrestle with it
 
-You may encounter challenges that seem confusing or impossible. Don't fret! This exercise is designed to challenge you. Resist the urge to just copy-paste code from your classmates, but definitely ask for help and talk to your peers.
+You may encounter challenges that seem confusing or impossible. Don't despair! This exercise is designed to challenge you. Resist the urge to just copy-and-paste code from your classmates, but definitely ask for help and talk to your peers.
 
-### What success looks like
-
-When you're done with the main assignment, your page should look like this. Green check marks next to each exercise means all tests are passing.
+When you're done with the main assignment, your page should look like this. Green check marks next to each test means the entire test suite is passing.
 
 ![](images/passing.png)
 
 ### Bonus
 
-Want more? There's a whole 'nother test suite just waiting for you!
+Looking for more challenge? Well, there's a whole set of bonus puzzles just waiting to be solved!
 
 1. Open the `part1/bonus.html` file in your web browser.
 1. Open the `part1/bonus.js` file in your text editor.
@@ -59,7 +72,7 @@ Want more? There's a whole 'nother test suite just waiting for you!
 
 ### But wait, there's more!
 
-Part 2 is under construction...
+Don't forget about part 2 located in the `part2/` directory. These puzzles will most likely make more sense once your instructor has gone over the next JavaScript concepts in class.
 
 ### Submitting your work
 
