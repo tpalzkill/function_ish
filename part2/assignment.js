@@ -33,11 +33,11 @@ function concatenate(arr) {
 }
 
 // Define a function named repeat that takes in two arguments.
-//     input (string)
-//     integer (number)
+//     str (string)
+//     times (number)
 //
-// Return a new string containing integer copies of the input string. For
-// example, given 'hi' and 4, then return 'hihihihi'.
+// Return a new string containing times copies of the input str. For example,
+// given 'hi' and 4, then return 'hihihihi'.
 function repeat(str, times) {
 
 }
@@ -187,7 +187,7 @@ function repeat(str, times) {
 // Define a function called fromPairs that takes in one argument.
 //    arr (array)
 //
-// Return a new object where each key-value pair is a from an element in the
+// Return a new object where each key-value pair is from an element in the
 // argument. For example, given [['a', 1], ['b', 2]], then return
 // { a: 1, b: 2 }.
 
