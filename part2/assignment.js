@@ -190,32 +190,3 @@ function repeat(str, times) {
 // Return a new object where each key-value pair is from an element in the
 // argument. For example, given [['a', 1], ['b', 2]], then return
 // { a: 1, b: 2 }.
-
-
-
-
-// Define a function named pluck that takes in two arguments.
-//     arr (array of objects)
-//     key (string)
-//
-// Return a new array where each element is the keyed value of each object.
-//
-// For example, given the array:
-//    [
-//      { name: 'moe', age: 40 },
-//      { name: 'larry', age: 50 },
-//      { name: 'curly', age: 60 }
-//    ]
-//
-// and the key 'name', then return ['moe', 'larry', 'curly'].
-
-
-
-
-// Define a function named pick that takes in two arguments.
-//    obj (object)
-//    keys (array of strings)
-//
-// Return a new object that contains only the specified keys. For example, given
-// { name: 'moe', age: 50, id: 1 } and ['name', 'age'], then return
-// { name: 'moe', age: 50 }.

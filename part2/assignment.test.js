@@ -125,6 +125,14 @@ window.onload = function() {
     });
   });
 
+  suite('values', function() {
+    test('returns values of an object', function() {
+      assert.deepEqual(values({}), []);
+      assert.deepEqual(values({a: 1, b: 'foo'}), [1, 'foo']);
+      assert.deepEqual(values({b: 'foo'}), ['foo']);
+    });
+  });
+
   suite('toPairs', function() {
     test('returns a new array where each element is a key-value pair array', function() {
       assert.deepEqual(toPairs({a: 1}), [['a', 1]]);
@@ -138,34 +146,6 @@ window.onload = function() {
       assert.deepEqual(fromPairs([['a', 1]]), {a: 1});
       assert.deepEqual(fromPairs([['a', 1], ['b', 2]]), {a: 1, b: 2});
       assert.deepEqual(fromPairs([]), {});
-    });
-  });
-
-  suite('values', function() {
-    test('returns values of an object', function() {
-      assert.deepEqual(values({}), []);
-      assert.deepEqual(values({a: 1, b: 'foo'}), [1, 'foo']);
-      assert.deepEqual(values({b: 'foo'}), ['foo']);
-    });
-  });
-
-  suite('pluck', function() {
-    test('grabs the values from an array of object for a specific key', function() {
-      assert.deepEqual(pluck([], 'foo'), []);
-      var stooges = [
-        {name: 'moe', age: 40},
-        {name: 'larry', age: 50},
-        {name: 'curly', age: 60}
-      ];
-      assert.deepEqual(pluck(stooges, 'name'), ['moe', 'larry', 'curly']);
-    });
-  });
-
-  suite('pick', function() {
-    test('picks an array of property names from an object', function() {
-      assert.deepEqual(pick({name: 'moe', age: 50, userid: 'moe1'}, []), {});
-      assert.deepEqual(pick({name: 'moe', age: 50, userid: 'moe1'},
-        ['name', 'age']), {name: 'moe', age: 50});
     });
   });
 
