@@ -152,7 +152,9 @@ function repeat(str, times) {
 //
 // Return a new object that has the key-value pairs of both objects. For
 // example, given { a: 1 } and { b: 2 }, then return { a: 1, b: 2 }.
-
+// If there's a key in more than one object,
+// the latest object to have the key will determine the value. For example,
+// given {c: 3} and {c: 4}, then return {c: 4}.
 
 
 
