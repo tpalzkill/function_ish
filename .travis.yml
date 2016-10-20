@@ -11,4 +11,3 @@ before_script:
 script:
   - mocha-phantomjs part1/assignment.html
   - echo $?
-  
