@@ -9,5 +9,5 @@ install:
 before_script:
   - echo $PATH
 script:
-  - mocha-phantomjs -b part1/assignment.html
+  - mocha-phantomjs part1/assignment.html
   - exit $?
