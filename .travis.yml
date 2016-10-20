@@ -8,7 +8,5 @@ install:
   - npm install -g mocha-phantomjs
 before_script:
   - echo $PATH
-  - which phantomjs
-  - mocha-phantomjs -—version
 script:
-  - mocha-phantomjs part1/assigment.test.js
+  - mocha-phantomjs part1/assignment.html
