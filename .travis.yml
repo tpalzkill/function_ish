@@ -4,7 +4,8 @@ node_js:
   - "0.10"
 
 install:
-  - npm install -g phantomjs mocha-phantomjs
+  - npm install -g phantomjs
+  - npm install -g mocha-phantomjs
 before_script:
   - phantomjs —-version
   - mocha-phantomjs -—version
