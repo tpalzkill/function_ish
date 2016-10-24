@@ -39,33 +39,32 @@ function sumAndProduct(x, y, z) {
 
 // Define a function named averageMovieReview that takes three arguments
 // between 0-5 (movie score)
-//    Ryan (number)
-//    Roger (number)
-//    Jake (number)
+//    rachel (number)
+//    roger (number)
+//    jake (number)
 //
 // Return the average of the three arguments
 // For example, given 2, 2, and 5, then return 3.
 //
-function averageMovieReview(Ryan, Roger, Jake){
-  
-}
+function averageMovieReview(rachel, roger, jake) {
 
+}
 
 // Define a function named averageWeightedMovieReview that takes three arguments
 // between 0-5 (movie score)
-//    Ryan (number)
-//    Roger (number)
-//    Jake (number)
+//    rachel (number)
+//    roger (number)
+//    jake (number)
 //
 // Return the weighted average of the three arguments.
 // Declare that weights for each reviewer in the function you are creating.
 // For example, given 2, 2, and 5,
 // with weights of 4, 4, 2 then return 8.666666666666666.
-// Let the weight for Ryan be .25,
-// Let the weight for Roger be 1,
-// Let the weight for Jake be 2.2
+// Let the weight for rachel be .25,
+// Let the weight for roger be 1,
+// Let the weight for jake be 2.2.
 //
-function averageWeightedMovieReview(Ryan, Roger, Jake){
+function weightedAverageMovieReview(rachel, roger, jake) {
 
 }
 
