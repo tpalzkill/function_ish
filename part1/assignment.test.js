@@ -2,6 +2,14 @@ window.onload = function() {
   var assert = chai.assert;
   mocha.setup('tdd');
 
+  suite('double', function(){
+    test('doubles the argument', function(){
+      assert.strictEqual(double(2), 4);
+      assert.strictEqual(double(-4), -8);
+      assert.strictEqual(double(3500), 7000);
+    })
+  })
+
   suite('sum', function() {
     test('adds two numbers', function() {
       assert.strictEqual(sum(5, 2), 7);

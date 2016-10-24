@@ -1,3 +1,11 @@
+// Define a function named double that takes one arguments
+//    a (number)
+//
+// Return the the argument times 2
+function double(a){
+  return 2 * a;
+}
+
 // Define a function named sum that takes two arguments
 //    a (number)
 //    b (number)
