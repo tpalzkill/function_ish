@@ -1,6 +1,6 @@
 window.onload = function() {
   mocha.setup('tdd');
-  var assert = chai.assert;
+  const assert = chai.assert;
 
   suite('caesarShiftInt', function() {
     test('throws an error if the number is less than 97', function() {
