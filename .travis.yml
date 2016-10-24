@@ -10,4 +10,3 @@ before_script:
   - echo $PATH
 script:
   - mocha-phantomjs part1/assignment.html
-  - exit $?
