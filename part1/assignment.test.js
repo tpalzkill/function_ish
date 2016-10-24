@@ -34,6 +34,22 @@ window.onload = function() {
     });
   });
 
+  suite('average', function(){
+    test('', function(){
+      assert.strictEqual(averageMovieReview(2,2,5),3);
+      assert.strictEqual(averageMovieReview(1.5,2.5,4.2),2.733333333333333);
+      assert.strictEqual(averageMovieReview(5,5,5),5);
+    })
+  })
+
+  suite('weightedAverage', function(){
+    test('', function(){
+      assert.strictEqual(averageWeightedMovieReview(2,2,5),4.5);
+      assert.strictEqual(averageWeightedMovieReview(1.5,2.5,4.2),4.038333333333334);
+      assert.strictEqual(averageWeightedMovieReview(5,5,5),5.75);
+    })
+  })
+
   suite('roundUp', function() {
     test('rounds the number up to the nearest integer', function() {
       assert.strictEqual(roundUp(2.1), 3);
