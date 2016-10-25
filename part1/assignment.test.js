@@ -50,6 +50,14 @@ window.onload = function() {
     });
   });
 
+  suite('roundUp', function() {
+    test('rounds the number up to the nearest integer', function() {
+      assert.strictEqual(roundUp(2.1), 3);
+      assert.strictEqual(roundUp(4.7), 5);
+      assert.strictEqual(roundUp(6.0), 6);
+    });
+  });
+
   suite('toFahrenheit', function() {
     test('converts the Celsius to Fahrenheit rounded to the nearest integer', function() {
       assert.strictEqual(toFahrenheit(30), 86);
@@ -361,10 +369,5 @@ window.onload = function() {
     });
   });
 
-  if (window.mochaPhantomJS) {
-    mochaPhantomJS.run();
-  }
-  else {
-    mocha.run();
-  }
+  mocha.run();
 };
