@@ -346,7 +346,7 @@ window.onload = function() {
       assert.strictEqual(calculateTaxRate(1, 'single'), '10%');
       assert.strictEqual(calculateTaxRate(100, 'single'), '10%');
       assert.strictEqual(calculateTaxRate(9225, 'single'), '10%');
-      assert.strictEqual(calculateTaxRate(9226, 'single'), '15%');
+      assert.strictEqual(calculateTaxRate(9276, 'single'), '15%');
       assert.strictEqual(calculateTaxRate(15000, 'single'), '15%');
       assert.strictEqual(calculateTaxRate(37450, 'single'), '15%');
     });
@@ -355,7 +355,7 @@ window.onload = function() {
       assert.strictEqual(calculateTaxRate(1, 'joint'), '10%');
       assert.strictEqual(calculateTaxRate(100, 'joint'), '10%');
       assert.strictEqual(calculateTaxRate(18450, 'joint'), '10%');
-      assert.strictEqual(calculateTaxRate(18451, 'joint'), '15%');
+      assert.strictEqual(calculateTaxRate(18551, 'joint'), '15%');
       assert.strictEqual(calculateTaxRate(25000, 'joint'), '15%');
       assert.strictEqual(calculateTaxRate(74900, 'joint'), '15%');
     });
