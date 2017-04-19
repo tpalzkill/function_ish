@@ -102,7 +102,7 @@ window.onload = function() {
       assert.strictEqual(toRoman(12), null);
     });
 
-    test('conversts the number to a roman numeral string', function() {
+    test('converts the number to a roman numeral string', function() {
       assert.strictEqual(toRoman(1), 'I');
       assert.strictEqual(toRoman(2), 'II');
       assert.strictEqual(toRoman(3), 'III');
