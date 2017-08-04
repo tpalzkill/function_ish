@@ -50,9 +50,17 @@ function averageMovieReview(rachel, roger, jake) {
 //    Roger's weight is 1
 //    Jake's weight is 2.2
 //
-// For example, given 2, 2, and 5, with the above weights, then return 4.5
-function weightedAverageMovieReview(rachel, roger, jake) {
+// Pay attention to the weights. These weights do not add up to 1.0, so the
+// weighted average is perhaps counterintuitive.
+//
+// https://en.wikipedia.org/wiki/Weighted_arithmetic_mean#Mathematical_definition
+//
+// For example
+// weightedAverageMovieReview(5, 5, 5)
+// = ((0.25 * 5) + (1.0 * 5) + (2.2 * 5)) / (0.25 + 1.0 + 2.2)
+// = 5.0
 
+function weightedAverageMovieReview(rachel, roger, jake) {
 }
 
 // Define a function named roundUp that takes one argument

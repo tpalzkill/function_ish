@@ -34,11 +34,37 @@ window.onload = function() {
     });
   });
 
+  // Pay attention to the weights. These weights do not add up to 1.0, so the
+  // weighted average is perhaps counterintuitive.
+  //
+  // https://en.wikipedia.org/wiki/Weighted_arithmetic_mean#Mathematical_definition
+  //
+  // From the question:
+  //
+  // Define a function named weightedAverageMovieReview that takes three arguments
+  //    rachel (number between 0 and 5)
+  //    roger (number between 0 and 5)
+  //    jake (number between 0 and 5)
+  //
+  // Return the weighted average of the three arguments with the following weights
+  //    Rachel's weight is 0.25
+  //    Roger's weight is 1
+  //    Jake's weight is 2.2
+  //
+  // This yields the following calulations below. Also, hopefully, there are no
+  // floating point rounding errors here.
+
   suite('weightedAverageMovieReview', function() {
     test('calculates the weighted average movie review', function() {
-      assert.strictEqual(weightedAverageMovieReview(2, 2, 5), 4.5);
-      assert.strictEqual(weightedAverageMovieReview(1.5, 2.5, 4.2), 4.038333333333334);
-      assert.strictEqual(weightedAverageMovieReview(5, 5, 5), 5.75);
+
+      // ((0.25 * 2) + (1.0 * 2) + (2.2 * 5)) / (0.25 + 1.0 + 2.2) = 3.913043478260869
+      assert.strictEqual(weightedAverageMovieReview(2, 2, 5), 3.913043478260869);
+
+      // ((0.25 * 1.5) + (1.0 * 2.5) + (2.2 * 4.2)) / (0.25 + 1.0 + 2.2) = 3.511594202898551
+      assert.strictEqual(weightedAverageMovieReview(1.5, 2.5, 4.2), 3.511594202898551);
+
+      // ((0.25 * 5) + (1.0 * 5) + (2.2 * 5)) / (0.25 + 1.0 + 2.2) = 5.0
+      assert.strictEqual(weightedAverageMovieReview(5, 5, 5), 5.0);
     });
   });
 
